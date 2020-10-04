@@ -70,7 +70,7 @@ public class TelefoneResources {
 			telefone.setCodigoPais(newTelefone.getCodigoPais());
 			telefone.setDDD(newTelefone.getDDD());
 			telefone.setNumero(newTelefone.getNumero());
-			telefone.setTipo(newTelefone.getTipo());
+			telefone.setTipoContato(newTelefone.getTipoContato());
 
 			Telefone telefoneUpdate = telefoneRepository.save(telefone);
 			return ResponseEntity.ok().body(telefoneUpdate);

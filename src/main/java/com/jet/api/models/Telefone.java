@@ -27,6 +27,6 @@ public class Telefone implements Serializable {
 	private int CodigoPais;
 	private String DDD;
 	private String numero;
-	private TipoContato Tipo;
+	private TipoContato TipoContato;
 
 }

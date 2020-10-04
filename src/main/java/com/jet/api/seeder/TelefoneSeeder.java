@@ -34,7 +34,7 @@ public class TelefoneSeeder {
 		telefone.setCodigoPais(55);
 		telefone.setDDD("11");
 		telefone.setNumero("98745-0000");
-		telefone.setTipo(TipoContato.COMERCIAL);
+		telefone.setTipoContato(TipoContato.COMERCIAL);
 
 		service.save(telefone);
 
