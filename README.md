@@ -1,4 +1,4 @@
-#Projeto Api Cadastro de pessoas.
+Projeto Api Cadastro de pessoas.
 
 Esta API, é um projeto Maven, foi desenvolvida na linguagem java 1.8, utilizando os
 frameworks Spring Boot, Lombok e hibernate.
@@ -8,13 +8,13 @@ o download e por isso segue os links abaixo.
 
 Para Maven -> https://maven.apache.org/
 Para Lombok -> https://projectlombok.org 
----------------------------------------------------------------------------------------------------------------
 
-#Utilização do banco.
+
+Utilização do banco.
 
 Para utilizar o banco de dados H2, digite esse endereço no browser http://localhost:8080/h2-console.
 Abrirá uma janela para login que deverá ser preenchido com os seguintes dados:
----------------------------------------------------------------------------------------------------------------	
+
 
 Saved Settings:	    Generic H2 (Embedded)
 Setting Name:       Generic H2 (Embedded)  
@@ -23,7 +23,7 @@ Driver Class:	    org.h2.Driver
 JDBC URL:           jdbc:h2:mem:testdb
 User Name:          sa
 Password:	
----------------------------------------------------------------------------------------------------------------
+
 
 Após digitar os dados no formulário de login, clique em Connect.
 Irá abrir o banco de dados, onde terá as tabelas abaixo:
@@ -40,31 +40,31 @@ Acione o botão "Edit" na parte inferior do banco.
 Abrirá a opção para adicionar dados. 
 Em cada um desses campos adicione o número 1 para todos e depois clique em salvar.
 Pronto, agora já dá para testar a aplicação.
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 				
-#Postman
+Postman
 
 Para utilização do Postman, segue o passo a passo do seguinte link:
  https://atendimento.tecnospeed.com.br/hc/pt-br/articles/360017143594-Como-instalar-e-utilizar-
  o-Postman-para-enviar-requisi%C3%A7%C3%B5es-HTTP#:~:text=Crie%20a%20conta%20e%20fa%C3%A7a,
  requisi%C3%A7%C3%A3o%20apenas%20clicando%20sobre%20ela.;
----------------------------------------------------------------------------------------------------------------
 
-##Métodos CRUD.
----------------------
 
-###GET:
+Métodos CRUD.
+
+
+GET:
  Para realizar uma pesquisa de todos os cadastros que há no  banco , basta selecionar o método de resposta GET 
  na caixa suspensa  à esquerda, adicionar o seguinte url (localhost:8080/cadastro) e clique em enviar/SEND.
----------------------------------------------------------------------------------------------------------------
 
-###GET com id:
+
+GET com id:
 Para buscar um cadastro específico, repita a ação acima, substituindo o url por este (localhost:8080/cadastro/1).
 Como há somente um cadastro, adicionei o número 1 na url, mas se acrescentar mais cadastros, é só trocar o 
 número 1 pelo número de id  do cadastro que tem interesse em  pesquisar.
----------------------------------------------------------------------------------------------------------------
+-
 
-###UPDATE:
+UPDATE:
  Para alterar dados de algum cadastro, basta selecionar o método de resposta GET na caixa suspensa
  à esquerda, utilizando a url (localhost:8080/cadastro/?)e substituindo o ? pelo número de interesse.
 O retorno será um  corpo no formato Json. Copie esse corpo e cole no campo  (Body), logo abaixo 
@@ -81,7 +81,7 @@ sendo as opções aceitáveis disponíveis para cada campo especificado abaixo:
 *Campo "tipoEndereco": Opções-> COMERCIAL RESIDENCIAL e CONTATO.
 *Campo "tipo": Opções-> RUA AVENIDA e ESTRADA.
 
-####Corpo Json exemplo.
+Corpo Json exemplo.
 
  {
         "idCadastro": 1,
@@ -121,19 +121,19 @@ sendo as opções aceitáveis disponíveis para cada campo especificado abaixo:
             "bairro": "Centro"
         }
     }
----------------------------------------------------------------------------------------------------------------
 
-###DELETE: 
+
+DELETE: 
 Para deletar um cadastro, basta selecionar o método de resposta DELETE na caixa suspensa
  à esquerda,  adicione a url (localhost:8080/cadastro/?), substituindo o ? pelo número de interesse e
   clique em enviar/SEND. 
----------------------------------------------------------------------------------------------------------------
 
-###POST: 
+
+POST: 
 Para adicionar um cadastro, basta selecionar o método de resposta POST na caixa suspensa
  à esquerda,  copie o corpo em formato Json que está abaixo e cole no campo (Body), logo abaixo 
 da caixa suspensa e clique em enviar/SEND.
----------------------------------------------------------------------------------------------------------------
+
 
  {
        
@@ -173,6 +173,6 @@ da caixa suspensa e clique em enviar/SEND.
             "bairro": "Centro"
         }
     }
----------------------------------------------------------------------------------------------------------------
+
 
 				
